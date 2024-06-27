@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    /* background-color: hsl(0, 0%, 95%); */
+    background: url(image/ook.jpg) no-repeat center / cover;
+}
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(169.7deg 80.69% 46.23%);
+    color: white;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 20px;
+}
+button{
+    width: 100px;
+    height: 90px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(292, 45%, 42%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+/* Button per hover krygye to light hojayga*/
+button:hover{
+    background-color: hsl(292, 45%, 62%);
+}
+/* Button per click krygye to flash light reflex deyga*/
+button:active{
+    background-color: hsl(292, 45%, 72%);
+}
+.operator-btn{
+    background-color: hsl(39, 100%, 50%);
+}
+.operator-btn:hover{
+    background-color: hsl(39, 100%, 65%);
+}
+.operator-btn:active{
+    background-color: hsl(39, 100%, 80%);
+}
+
+.equalsTo{
+    background-color: hsl(125, 93%, 48%);
+}
+.equalsTo:hover{
+    background-color: hsl(125, 93%, 65%);
+}
+.equalsTo:active{
+    background-color: hsl(125, 93%, 85%);
+}
